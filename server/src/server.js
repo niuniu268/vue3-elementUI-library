@@ -18,6 +18,7 @@ app.use(express.json());
 app.use("/library", guestRouter);
 app.use("/auth", authFormatFilter, authRouter);
 app.use("/library/profile", jwtFilter.bind({role: ["USER", "ADMIN"]}), profileController.getProfile);
+
 app.use("/library/user", jwtFilter.bind({role: ["USER", "ADMIN"]}), bookRouter);
 app.use("/admin", jwtFilter.bind({role: "ADMIN"}), adminRouter);
 
