@@ -31,6 +31,7 @@ export class usersData{
     }
     list:userInt[] = []
     isShow=false
+    isAddDialog=true
     rolelist:roleListInt[] = []
     active:activeInt={
         username:"",
