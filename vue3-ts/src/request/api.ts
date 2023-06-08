@@ -27,7 +27,7 @@ export function getBooks(){
 
 export function getusers() {
 
-    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkJvYiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY4NjIwMDE4NSwiZXhwIjoxNjg2MjAyODg1LCJpc3MiOiJib29rc3Rlci1zZXJ2ZXItYXBpIiwic3ViIjoic3R1ZGVudCBsaWNlbnNlZCBqd3QgYWNjZXNzIHRva2VuIn0.QKOM7k436xI4EfYwt_-pca-30pkTsUCZ9D_UoQ9cz0I';
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkJvYiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY4NjIxMjQwMCwiZXhwIjoxNjg2MjE1MTAwLCJpc3MiOiJib29rc3Rlci1zZXJ2ZXItYXBpIiwic3ViIjoic3R1ZGVudCBsaWNlbnNlZCBqd3QgYWNjZXNzIHRva2VuIn0.PviXhS3CXnW5J8mIXm95TsohUtz8V7hIn3BOMctJu3Q';
     return service({
         url:"/admin/users",
         method:"get",
@@ -37,3 +37,4 @@ export function getusers() {
     });
     
 }
+

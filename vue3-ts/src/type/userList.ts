@@ -12,6 +12,16 @@ export interface libraryUsersInt{
     version:number
 }
 
+interface activeInt{
+    username:string,
+    password:string,
+    role:string
+}
+
+interface roleListInt{
+    role:string
+}
+
 export class usersData{
     selectData:selectDataInt={
         username:""
@@ -20,4 +30,11 @@ export class usersData{
         version: -1
     }
     list:userInt[] = []
+    isShow=false
+    rolelist:roleListInt[] = []
+    active:activeInt={
+        username:"",
+        password:"",
+        role:"",
+    }
 }
